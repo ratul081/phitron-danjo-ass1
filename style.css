@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #222;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skills-education {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-education > div {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .skills-education {
+    flex-direction: column;
+  }
+
+  .skills-education > div {
+    margin-bottom: 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section img {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}
